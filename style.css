@@ -39,15 +39,27 @@ input[name="r"]{
     width: 400%;
     height: 100%;
     display: flex;
-    position: relative;
 }
 .slide{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 25%;
+    transition: all .6s ease;
 }
 .img{
     width: 1000px;
     height: 700px;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1{
+    margin-left: -75%;
 }
