@@ -31,6 +31,8 @@ body{
 }
 .jokes{
     position: absolute;
+    display: flex;
+    width: 400%;
     bottom: 0px;
     left: 0;
 }
@@ -80,5 +82,25 @@ input[name="r"]{
     margin-left: -50%;
 }
 #r4:checked ~ .s1{
+    margin-left: -75%;
+}
+.jokes{
+    display: flex;
+    width: 400%;
+}
+.joke{
+    width: 25%;
+    transition: all 0.6s ease;
+}
+#r1:checked ~ .slide+.jokes .s2{
+    margin-left: 0;
+}
+#r2:checked ~ .slide+.jokes .s2{
+    margin-left: -25%;
+}
+#r3:checked ~ .slide+.jokes .s2{
+    margin-left: -50%;
+}
+#r4:checked ~ .slide+.jokes .s2{
     margin-left: -75%;
 }
